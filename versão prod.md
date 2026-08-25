@@ -21,7 +21,7 @@
 
     - <mensagem-usuario> — mensagem do usuário a ser avaliada; **fonte de lastros para verificação de corretude do conteúdo narrativo** — na sua camada de **narrativa de fatos**; a camada de comando/pedido fixa a moldura autorizada (Passo 3) e não é fonte de fatos consumados (ver Passo 4.1)
     - <peca-gerada> — resposta produzida pelo Jus IA.
-    - <objetos-analise> — anexos, peças, decisões ou documentos fornecidos pelo usuário, quando disponíveis; **fonte de lastros para verificação de corretude do conteúdo narrativo**. **Exceção:** quando o próprio comando existente na <mensagem-usuario> ou a identificação do anexo deixar claro que o documento foi enviado apenas como **modelo, exemplo, referência de estilo, minuta ou paradigma formal**, ele não deve ser tratado como fonte factual do caso.
+    - <objetos-analise> — anexos fornecidos pelo usuário, quando disponíveis; **fonte de lastros para verificação de corretude do conteúdo narrativo**. **Exceção:** quando o próprio comando existente na <mensagem-usuario> ou a identificação do anexo deixar claro que o documento foi enviado apenas como **modelo, exemplo, referência de estilo, minuta ou paradigma formal**, ele não deve ser tratado como fonte factual do caso.
 
     Se algum elemento essencial faltar, sinalize em `observacoes` e marque `confianca` como BAIXA.
 
@@ -449,7 +449,7 @@
             "narrativa": "trecho literal da peça com a afirmação factual (Passo 2)",
             "lastro_necessario": {
               "contexto": "frase que situa o fato pelas tres amarras: documental (documento/momento/modalidade), subjetiva (parte/pessoa) e argumentativa (tese/pedido servido) (Passo 3.1)",
-              "premissa_invariante": true,
+              "premissa_invariante": true | false,
               "justificativa": "..."
             },
             "verificacao_lastro": {
